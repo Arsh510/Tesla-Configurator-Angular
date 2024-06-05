@@ -32,8 +32,7 @@ export class Step2Component implements OnInit {
     const selectedModel = this.configuratorService.selectedModel;
     if (selectedModel) {
       const selectedModelCode = this.configuratorService.selectedModelCode; // Get the selected model code from the previous step
-      this.http.get(`/options/${selectedModelCode}`).subscribe((data: any) => {
-        console.log('====',data);        
+      this.http.get(`https://github.com/Arsh510/Tesla-Configurator-Angular/options/${selectedModelCode}`).subscribe((data: any) => {
         this.configs = data.configs;
         this.towHitch = data.towHitch;
         this.yoke = data.yoke;

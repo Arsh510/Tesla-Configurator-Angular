@@ -7,7 +7,7 @@ import { appConfig } from './app/app.config';
 import { AppModule } from './app/app.module';
 
 const handlers = [
-    http.get('https://arsh510.github.io/Tesla-Configurator-Angular/Tesla-Configurator-Angular/options/:id', ({ params }) => {
+    http.get('https://github.com/Arsh510/Tesla-Configurator-Angular/options/:id', ({ params }) => {
         const options = {
             S: {
                 configs: [
@@ -134,7 +134,7 @@ const handlers = [
         // @ts-ignore
         return HttpResponse.json(options[params.id.toUpperCase()]);
     }),
-    http.get('https://arsh510.github.io/Tesla-Configurator-Angular/Tesla-Configurator-Angular/models', ({ request, params, cookies }) => {
+    http.get('https://github.com/Arsh510/Tesla-Configurator-Angular/models', ({ request, params, cookies }) => {
         return HttpResponse.json([
             {
                 code: 'S',

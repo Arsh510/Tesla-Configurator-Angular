@@ -26,7 +26,7 @@ export class Step1Component implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.http.get('https://arsh510.github.io/Tesla-Configurator-Angular/Tesla-Configurator-Angular/models').subscribe((data: any) => {
+    this.http.get('https://github.com/Arsh510/Tesla-Configurator-Angular/models').subscribe((data: any) => {
       this.models = data;
       this.setStoredData();
     });
